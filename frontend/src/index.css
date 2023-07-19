@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .inputStyle {
+    @apply bg-gray-300 appearance-none rounded w-full py-2 xxs:px-2 sm:px-4 xxs:text-xs sm:text-base text-gray-700 focus:outline-none focus:border-green-500 resize-none;
+  }
+  .labelStyle {
+    @apply text-gray-200 text-sm font-semibold mb-2;
+  }
+  .btnStyle {
+    @apply text-[#00ac8a] border border-[#00df9a] hover:bg-[#00df9a]/80 hover:text-white ease-in-out duration-500 px-3 py-1 text-sm lg:text-sm lg:px-4 lg:py-2 rounded-lg;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;800&display=swap");
+
+body {
+  margin: 0;
+  background-color: #000300;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.dashboard .active {
+  background-color: #334155;
+}
+.navbar .active {
+  border-bottom: 2px solid #00df9a;
+  color: #00df9a;
+}
